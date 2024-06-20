@@ -16,6 +16,7 @@ public class ElementMethods {
 
     //Constructor
     public ElementMethods(WebDriver driver) {
+
         this.driver = driver;
     }
 
