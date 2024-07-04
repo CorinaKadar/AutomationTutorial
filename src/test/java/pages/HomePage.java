@@ -24,8 +24,25 @@ public class HomePage {
     @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']")
     public WebElement alertMenu; // identificarea elementului se salveaza in variabila alertMenu
 
+    @FindBy(xpath = "//h5[text()='Forms']")
+    public WebElement formMenu;
+
+    @FindBy(xpath = "//h5[text()='Elements']")
+    public WebElement elementsMenu;
+
     public void navigateToAlertsMenu(){
         pageMethods.scrollPage(0, 350);
         elementMethods.clickElement(alertMenu);
     }
+
+    public void navigateToFormMenu(){
+        pageMethods.scrollPage(0,350);
+        elementMethods.clickElement(formMenu);
+    }
+
+    public void navigateToElementsMenu(){
+        pageMethods.scrollPage(0, 350);
+        elementMethods.clickElement(elementsMenu);
+    }
+
 }
