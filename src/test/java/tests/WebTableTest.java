@@ -2,31 +2,27 @@ package tests;
 
 import helperMethods.ElementMethods;
 import helperMethods.PageMethods;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import pages.ElementsPage;
 import pages.HomePage;
 import pages.WebTablesPage;
+import sharedData.SharedData;
 
-public class WebTableTest {
+public class WebTableTest extends SharedData {
 
-    public WebDriver driver;
+    //public WebDriver driver;
 
     @Test
     public void metodaTest(){
 
         //deschidem un browser
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
 
         //accesam un anumit URL
-        driver.get("https://demoqa.com");
+        //driver.get("https://demoqa.com");
 
         //Maximize browser
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         //Close browser
         //driver.quit();

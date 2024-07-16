@@ -1,34 +1,28 @@
 package pages;
 
-import helperMethods.AlertMethods;
-import helperMethods.ElementMethods;
-import helperMethods.FrameMethods;
-import helperMethods.PageMethods;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.List;
 
-public class PracticeFormPage {
+public class PracticeFormPage extends BasePage {
 
-    public WebDriver driver;
-    public ElementMethods elementMethods;
-    public PageMethods pageMethods;
+    //public WebDriver driver;
+    //public ElementMethods elementMethods;
+    //public PageMethods pageMethods;
 
 
     //Constructor
     public PracticeFormPage(WebDriver driver) {
-        this.driver = driver;
-        elementMethods = new ElementMethods(driver);
-        pageMethods = new PageMethods(driver);
-        PageFactory.initElements(driver, this);
+        super(driver);
+        //this.driver = driver;
+        //elementMethods = new ElementMethods(driver);
+        //pageMethods = new PageMethods(driver);
+        //PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "firstName")

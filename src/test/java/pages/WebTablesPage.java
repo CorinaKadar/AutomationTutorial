@@ -1,22 +1,20 @@
 package pages;
 
-import helperMethods.ElementMethods;
-import helperMethods.PageMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class WebTablesPage {
+public class WebTablesPage extends BasePage{
 
-    public WebDriver driver;
-    public ElementMethods elementMethods;
+    //public WebDriver driver;
+    //public ElementMethods elementMethods;
 
     //Constructor
     public WebTablesPage(WebDriver driver) {
-        this.driver = driver;
-        elementMethods = new ElementMethods(driver);
-        PageFactory.initElements(driver, this);
+        super(driver);
+        //this.driver = driver;
+        //elementMethods = new ElementMethods(driver);
+        //PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "addNewRecordButton")

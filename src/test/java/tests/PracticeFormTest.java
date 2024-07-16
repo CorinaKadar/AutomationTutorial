@@ -2,34 +2,30 @@ package tests;
 
 import helperMethods.ElementMethods;
 import helperMethods.PageMethods;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FormsPage;
 import pages.HomePage;
 import pages.PracticeFormPage;
+import sharedData.SharedData;
 
-import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
-public class PracticeFormTest {
+public class PracticeFormTest extends SharedData {
 
-    public WebDriver driver;
+    //public WebDriver driver;
 
     @Test
     public void metodaTest() {
 
         //deschidem un browser
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
 
         //accesam un anumit URL
-        driver.get("https://demoqa.com");
+        //driver.get("https://demoqa.com");
 
         //Maximize browser
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         //Close browser
         //driver.quit();

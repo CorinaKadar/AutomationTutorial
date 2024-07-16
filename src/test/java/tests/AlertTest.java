@@ -3,35 +3,30 @@ package tests;
 import helperMethods.AlertMethods;
 import helperMethods.ElementMethods;
 import helperMethods.PageMethods;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pages.AlertsPage;
 import pages.AlertsWindowsPage;
 import pages.HomePage;
+import sharedData.SharedData;
 
-import java.time.Duration;
+public class AlertTest extends SharedData {
 
-public class AlertTest {
-
-    public WebDriver driver;
+    //public WebDriver driver;
 
     @Test
     public void metodaTest() {
 
         //deschidem un browser
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
 
         //accesam un anumit URL
-        driver.get("https://demoqa.com");
+        //driver.get("https://demoqa.com");
 
         //Maximize browser
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         //Wait implicit (de ex dupa ce maresti browserul)
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         //definim un obiect de tip alertMethods ca sa apelam metodele generale din clasa
         AlertMethods alertMethods = new AlertMethods(driver);
