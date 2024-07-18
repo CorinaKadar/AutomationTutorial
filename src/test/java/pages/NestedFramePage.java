@@ -22,10 +22,10 @@ public class NestedFramePage extends BasePage{
     }
 
     @FindBy(xpath = "//iframe[@srcdoc='<p>Child Iframe</p>']")
-    public WebElement childFrame;
+    private WebElement childFrame;
 
     @FindBy(xpath = "//p")
-    public  WebElement textChildFrame;
+    private  WebElement textChildFrame;
 
     public void interactWithNestedFrame() {
         frameMethods.switchToFrame("frame1");

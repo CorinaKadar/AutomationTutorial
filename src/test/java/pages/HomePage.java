@@ -20,13 +20,13 @@ public class HomePage extends BasePage{
     }
 
     @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']")
-    public WebElement alertMenu; // identificarea elementului se salveaza in variabila alertMenu
+    private WebElement alertMenu; // identificarea elementului se salveaza in variabila alertMenu
 
     @FindBy(xpath = "//h5[text()='Forms']")
-    public WebElement formMenu;
+    private WebElement formMenu;
 
     @FindBy(xpath = "//h5[text()='Elements']")
-    public WebElement elementsMenu;
+    private WebElement elementsMenu;
 
     public void navigateToAlertsMenu(){
         pageMethods.scrollPage(0, 350);

@@ -20,7 +20,7 @@ public class ElementsPage extends BasePage{
     }
 
     @FindBy(xpath = "//span[text()='Web Tables']")
-    public WebElement webTableSubmenu;
+    private WebElement webTableSubmenu;
 
     public void navigateToWebTablesPage(){
         elementMethods.clickElement(webTableSubmenu);

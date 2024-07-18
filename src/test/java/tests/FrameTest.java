@@ -31,23 +31,23 @@ public class FrameTest extends SharedData {
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         //definim un obiect de tip alertMethods ca sa apelam metodele generale din clasa
-        AlertMethods alertMethods = new AlertMethods(driver);
-        ElementMethods elementMethods = new ElementMethods(driver);
-        PageMethods pageMethods = new PageMethods(driver);
-        FrameMethods frameMethods = new FrameMethods(driver);
+        AlertMethods alertMethods = new AlertMethods(getDriver());
+        ElementMethods elementMethods = new ElementMethods(getDriver());
+        PageMethods pageMethods = new PageMethods(getDriver());
+        FrameMethods frameMethods = new FrameMethods(getDriver());
 
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.navigateToAlertsMenu();
 
-        AlertsWindowsPage alertsWindowsPage = new AlertsWindowsPage(driver);
+        AlertsWindowsPage alertsWindowsPage = new AlertsWindowsPage(getDriver());
         alertsWindowsPage.navigateToFramePage();
 
-        FramePage framePage = new FramePage(driver);
+        FramePage framePage = new FramePage(getDriver());
         framePage.interactWithBigIFrame();
         framePage.interactWithSmallIFrame();
         framePage.navigateToNestedFrame();
 
-        NestedFramePage nestedFramePage = new NestedFramePage(driver);
+        NestedFramePage nestedFramePage = new NestedFramePage(getDriver());
         nestedFramePage.interactWithNestedFrame();
 
         //facem un scroll la pagina pt vizibilitate

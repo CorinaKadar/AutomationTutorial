@@ -21,7 +21,7 @@ public class FormsPage extends BasePage{
     }
 
     @FindBy(xpath = "//span[text()='Practice Form']")
-    public WebElement practiceFormSubmenu;
+    private WebElement practiceFormSubmenu;
 
     public void navigateToPracticeFormPage(){
         elementMethods.clickElement(practiceFormSubmenu);

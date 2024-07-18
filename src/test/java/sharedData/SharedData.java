@@ -9,18 +9,18 @@ import java.time.Duration;
 
 public class SharedData {
 
-    public WebDriver driver;
+    private WebDriver driver;
+
+    public WebDriver getDriver() {
+        return driver;
+    }
 
     @BeforeMethod
     public void prepareEnv(){
         driver = new ChromeDriver();
-
         driver.get("https://demoqa.com");
-
         driver.manage().window().maximize();
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
     }
 
     @AfterMethod

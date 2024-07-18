@@ -31,8 +31,8 @@ public class PracticeFormTest extends SharedData {
         //driver.quit();
 
         //Obiecte
-        ElementMethods elementMethods = new ElementMethods(driver);
-        PageMethods pageMethods = new PageMethods(driver);
+        ElementMethods elementMethods = new ElementMethods(getDriver());
+        PageMethods pageMethods = new PageMethods(getDriver());
 
 
         //facem un scroll la pagina pt vizibilitate
@@ -45,14 +45,14 @@ public class PracticeFormTest extends SharedData {
         //formMenu.click();
         //elementMethods.clickElement(formMenu);
 
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.navigateToFormMenu();
 
         //WebElement practiceFormSubmenu = driver.findElement(By.xpath("//span[text()='Practice Form']"));
         //practiceformsubmenu.click();
         //elementMethods.clickElement(practiceFormSubmenu);
 
-        FormsPage formsPage = new FormsPage(driver);
+        FormsPage formsPage = new FormsPage(getDriver());
         formsPage.navigateToPracticeFormPage();
 
         // ------- Completam form-ul
@@ -182,7 +182,7 @@ public class PracticeFormTest extends SharedData {
         //submitButtonElement.click();
         //elementMethods.clickElement(submitButtonElement);
 
-        PracticeFormPage practiceFormPage = new PracticeFormPage(driver);
+        PracticeFormPage practiceFormPage = new PracticeFormPage(getDriver());
         practiceFormPage.fillEntireForm(firstNameValue, lastNameValue, emailValue, genderValue, mobileNumberValue, dateOfBirthDaysValue,
                 subjectInputValue, hobbiesValue, picturePathValue,addressValue, stateInputValue, cityInputValue);
 

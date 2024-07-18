@@ -29,9 +29,9 @@ public class AlertTest extends SharedData {
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         //definim un obiect de tip alertMethods ca sa apelam metodele generale din clasa
-        AlertMethods alertMethods = new AlertMethods(driver);
-        ElementMethods elementMethods = new ElementMethods(driver);
-        PageMethods pageMethods = new PageMethods(driver);
+        AlertMethods alertMethods = new AlertMethods(getDriver());
+        ElementMethods elementMethods = new ElementMethods(getDriver());
+        PageMethods pageMethods = new PageMethods(getDriver());
 
         //facem un scroll la pagina pt vizibilitate
         //JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -43,14 +43,14 @@ public class AlertTest extends SharedData {
         //alertMenu.click();
         //elementMethods.clickElement(alertMenu);
 
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.navigateToAlertsMenu();
 
         //WebElement alertsSubmenu = driver.findElement(By.xpath("//span[text()='Alerts']"));
         //alertsSubmenu.click();
         //elementMethods.clickElement(alertsSubmenu);
 
-        AlertsWindowsPage alertsWindowsPage = new AlertsWindowsPage(driver);
+        AlertsWindowsPage alertsWindowsPage = new AlertsWindowsPage(getDriver());
         alertsWindowsPage.navigateToAlertsPage();
 
         //Interactionam cu o alerta
@@ -59,7 +59,7 @@ public class AlertTest extends SharedData {
         //alertButtonElement.click();
         //elementMethods.clickElement(alertButtonElement);
 
-        AlertsPage alertsPage = new AlertsPage(driver);
+        AlertsPage alertsPage = new AlertsPage(getDriver());
         alertsPage.interactWithAlertButton();
 
         //Alert alertOK = driver.switchTo().alert();

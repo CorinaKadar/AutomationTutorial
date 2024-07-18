@@ -27,13 +27,13 @@ public class WindowTest extends SharedData {
         //ElementMethods elementMethods = new ElementMethods(driver);
         //PageMethods pageMethods = new PageMethods(driver);
 
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.navigateToAlertsMenu();
 
-        AlertsWindowsPage alertsWindows = new AlertsWindowsPage(driver);
+        AlertsWindowsPage alertsWindows = new AlertsWindowsPage(getDriver());
         alertsWindows.navigateToWindowPage();
 
-        WindowsPage windowsPage = new WindowsPage(driver);
+        WindowsPage windowsPage = new WindowsPage(getDriver());
         windowsPage.interactWithNewTab();
         windowsPage.interactWithNewWindow();
 
@@ -88,6 +88,6 @@ public class WindowTest extends SharedData {
         //driver.close();
         //windowMethods.closeCurrentTab();
 
-        driver.quit();
+        //driver.quit();
     }
 }

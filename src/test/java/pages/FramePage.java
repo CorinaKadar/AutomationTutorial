@@ -22,13 +22,13 @@ public class FramePage extends BasePage{
     }
 
     @FindBy(id = "sampleHeading")
-    public WebElement iFrame1Text;
+    private WebElement iFrame1Text;
 
     @FindBy(id = "sampleHeading")
-    public WebElement iFrame2Text;
+    private WebElement iFrame2Text;
 
     @FindBy(xpath = "//span[text()='Nested Frames']")
-    public WebElement nestedFramesSubmenu;
+    private WebElement nestedFramesSubmenu;
 
     public void interactWithBigIFrame(){
         frameMethods.switchToFrame("frame1");

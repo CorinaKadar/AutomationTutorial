@@ -23,16 +23,16 @@ public class AlertsPage extends BasePage{
     }
 
     @FindBy(id = "alertButton")
-    public  WebElement alertButtonElement;
+    private  WebElement alertButtonElement;
 
     @FindBy(id = "timerAlertButton")
-    public  WebElement timerAlertButtonElement;
+    private  WebElement timerAlertButtonElement;
 
     @FindBy(id = "confirmButton")
-    public  WebElement confirmButtonElement;
+    private  WebElement confirmButtonElement;
 
     @FindBy(id = "promtButton")
-    public  WebElement promtButtonElement;
+    private  WebElement promtButtonElement;
 
     public void interactWithAlertButton(){
         elementMethods.clickElement(alertButtonElement);

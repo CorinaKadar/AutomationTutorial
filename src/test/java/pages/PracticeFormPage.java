@@ -26,67 +26,67 @@ public class PracticeFormPage extends BasePage {
     }
 
     @FindBy(id = "firstName")
-    public WebElement firstNameElement;
+    private WebElement firstNameElement;
 
     @FindBy(id = "lastName")
-    public WebElement lastNameElement;
+    private WebElement lastNameElement;
 
     @FindBy(id = "userEmail")
-    public WebElement emailElement;
+    private WebElement emailElement;
 
     @FindBy(xpath = "//div[@id='genterWrapper']/div/div/label[@class='custom-control-label']")
-    public List<WebElement> genderElements;
+    private List<WebElement> genderElements;
 
     @FindBy(id = "userNumber")
-    public WebElement mobileNumberElement;
+    private WebElement mobileNumberElement;
 
     @FindBy(id = "dateOfBirthInput")
-    public WebElement dateOfBirthElement;
+    private WebElement dateOfBirthElement;
 
     @FindBy(className = "react-datepicker__month-select")
-    public WebElement dateOfBirthMonthElement;
+    private WebElement dateOfBirthMonthElement;
 
     @FindBy(className = "react-datepicker__year-select")
-    public WebElement dateOfBirthYearElement;
+    private WebElement dateOfBirthYearElement;
 
     @FindBy(xpath = "//div[@class='react-datepicker__month']//div[not(contains(@class,'--outside-month')) and @role='option']")
-    public List<WebElement> dateOfBirthDaysElement;
+    private List<WebElement> dateOfBirthDaysElement;
 
     @FindBy(id = "subjectsInput")
-    public WebElement subjectInputElement;
+    private WebElement subjectInputElement;
 
     @FindBy(xpath = "//div[@id='hobbiesWrapper']/div/div/label[@class='custom-control-label']")
-    public List<WebElement> hobbiesElements;
+    private List<WebElement> hobbiesElements;
 
     @FindBy(id = "uploadPicture")
-    public WebElement uploadPictureElement;
+    private WebElement uploadPictureElement;
 
     @FindBy(id = "currentAddress")
-    public WebElement addressElement;
+    private WebElement addressElement;
 
     @FindBy(id = "state")
-    public WebElement stateElement;
+    private WebElement stateElement;
 
     @FindBy(id = "react-select-3-input")
-    public WebElement stateInputElement;
+    private WebElement stateInputElement;
 
     @FindBy(id = "city")
-    public WebElement cityElement;
+    private WebElement cityElement;
 
     @FindBy(id = "react-select-4-input")
-    public WebElement cityInputElement;
+    private WebElement cityInputElement;
 
     @FindBy(id = "submit")
-    public WebElement submitButtonElement;
+    private WebElement submitButtonElement;
 
     @FindBy(id = "example-modal-sizes-title-lg")
-    public WebElement thankYouMessageElement;
+    private WebElement thankYouMessageElement;
 
     @FindBy(xpath = "//table[@class='table table-dark table-striped table-bordered table-hover']/tbody/tr")
-    public List<WebElement> tableValues;
+    private List<WebElement> tableValues;
 
     @FindBy(id = "closeLargeModal")
-    public WebElement closeButtonElement;
+    private WebElement closeButtonElement;
 
     public void fillEntireForm(String firstNameValue, String lastNameValue, String emailValue, String genderValue,
                                String mobileNumberValue, String dateOfBirthDaysValue, String subjectInputValue,

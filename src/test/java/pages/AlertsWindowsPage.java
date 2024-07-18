@@ -20,13 +20,13 @@ public class AlertsWindowsPage extends BasePage {
     }
 
     @FindBy(xpath = "//span[text()='Browser Windows']")
-    public WebElement browserSubmenu;
+    private WebElement browserSubmenu;
 
     @FindBy(xpath = "//span[text()='Frames']")
-    public WebElement framesSubmenu;
+    private WebElement framesSubmenu;
 
     @FindBy(xpath = "//span[text()='Alerts']")
-    public WebElement alertsSubmenu;
+    private WebElement alertsSubmenu;
 
     public void navigateToWindowPage(){
         pageMethods.scrollPage(0, 350);

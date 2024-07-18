@@ -28,8 +28,8 @@ public class WebTableTest extends SharedData {
         //driver.quit();
 
         //Obiecte
-        PageMethods pageMethods = new PageMethods(driver);
-        ElementMethods elementMethods = new ElementMethods(driver);
+        PageMethods pageMethods = new PageMethods(getDriver());
+        ElementMethods elementMethods = new ElementMethods(getDriver());
 
         //facem un scroll la pagina pt vizibilitate
         //JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -41,14 +41,14 @@ public class WebTableTest extends SharedData {
         //elementsmenu.click();
         //elementMethods.clickElement(elementsMenu);
 
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.navigateToElementsMenu();
 
         //WebElement webTableSubmenu = driver.findElement(By.xpath("//span[text()='Web Tables']"));
         //webtablesubmenu.click();
         //elementMethods.clickElement(webTableSubmenu);
 
-        ElementsPage elementsPage = new ElementsPage(driver);
+        ElementsPage elementsPage = new ElementsPage(getDriver());
         elementsPage.navigateToWebTablesPage();
 
         //Test1 - Adaugam un nou entry
@@ -98,7 +98,7 @@ public class WebTableTest extends SharedData {
         //submitElement.click();
         //elementMethods.clickElement(submitElement);
 
-        WebTablesPage webTablesPage = new WebTablesPage(driver);
+        WebTablesPage webTablesPage = new WebTablesPage(getDriver());
         webTablesPage.addEntry(firstNameValue, lastNameValue, userEmailValue, ageValue, salaryValue, departmentValue);
 
         //Test2 - Modificam un entry existent
@@ -137,7 +137,7 @@ public class WebTableTest extends SharedData {
         webTablesPage.deleteEntry();
 
         //Close browser
-        driver.quit();
+        //driver.quit();
 
     }
 
