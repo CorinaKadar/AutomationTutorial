@@ -1,0 +1,14 @@
+{
+  "firstNameValue": "Corina",
+  "lastNameValue": "Kadar",
+  "emailValue": "ck@yahoo.com",
+  "genderValue": "Female",
+  "mobileNumberValue": "0741111111",
+  "dateOfBirthDaysValue": "5",
+  "subjectInputValue": "Accounting",
+  "hobbiesValue": ["Sports", "Reading", "Music"],
+  "picturePathValue": "TestFile.txt",
+  "addressValue": "105 Coconut Lane",
+  "stateInputValue": "Uttar Pradesh",
+  "cityInputValue": "Lucknow"
+}

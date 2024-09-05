@@ -16,7 +16,5 @@ public class PageMethods {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy("+x+","+y+")", "");
-
     }
-
 }

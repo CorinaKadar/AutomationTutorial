@@ -6,19 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class NestedFramePage extends BasePage{
 
-    //public WebDriver driver;
-    //public ElementMethods elementMethods;
-    //public PageMethods pageMethods;
-    //public FrameMethods frameMethods;
-
     //Constructor
     public NestedFramePage(WebDriver driver) {
         super(driver);
-        //this.driver = driver;
-        //elementMethods = new ElementMethods(driver);
-        //pageMethods = new PageMethods(driver);
-        //frameMethods = new FrameMethods(driver);
-        //PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//iframe[@srcdoc='<p>Child Iframe</p>']")

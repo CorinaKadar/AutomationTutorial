@@ -6,17 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class ElementsPage extends BasePage{
 
-    //public WebDriver driver;
-    //public ElementMethods elementMethods;
-    //public PageMethods pageMethods;
-
     //Constructor
     public ElementsPage(WebDriver driver) {
         super(driver);
-        //this.driver = driver;
-        //elementMethods = new ElementMethods(driver);
-        //pageMethods = new PageMethods(driver);
-        //PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//span[text()='Web Tables']")

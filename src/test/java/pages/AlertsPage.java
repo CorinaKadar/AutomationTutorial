@@ -6,20 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class AlertsPage extends BasePage{
 
-    //public WebDriver driver;
-    //public ElementMethods elementMethods;
-    //public PageMethods pageMethods;
-    //public AlertMethods alertMethods;
-
     //Constructor
     public AlertsPage(WebDriver driver) {
         super(driver);
-
-        //this.driver = driver;
-        //elementMethods = new ElementMethods(driver);
-        //pageMethods = new PageMethods(driver);
-        //alertMethods = new AlertMethods(driver);
-        //PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "alertButton")
@@ -54,5 +43,4 @@ public class AlertsPage extends BasePage{
         elementMethods.clickElement(promtButtonElement);
         alertMethods.fillAlert("Corina");
     }
-
 }

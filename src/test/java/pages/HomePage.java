@@ -6,17 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage{
 
-    //public WebDriver driver;
-    //public ElementMethods elementMethods;
-    //public PageMethods pageMethods;
-
     //Constructor
     public HomePage(WebDriver driver){
          super(driver);
-        //this.driver = driver;
-        //elementMethods = new ElementMethods(driver);
-        //pageMethods = new PageMethods(driver);
-        //PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//h5[text()='Alerts, Frame & Windows']")
@@ -42,5 +34,4 @@ public class HomePage extends BasePage{
         pageMethods.scrollPage(0, 350);
         elementMethods.clickElement(elementsMenu);
     }
-
 }

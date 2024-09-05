@@ -25,6 +25,4 @@ public class WindowMethods {
     public void closeCurrentTab(){
          driver.close();
     }
-
-
 }

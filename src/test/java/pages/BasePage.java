@@ -22,5 +22,4 @@ public class BasePage {
         windowMethods = new WindowMethods(driver);
         PageFactory.initElements(driver, this);
     }
-
 }

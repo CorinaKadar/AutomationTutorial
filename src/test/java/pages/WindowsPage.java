@@ -6,19 +6,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class WindowsPage extends BasePage {
 
-    //public WebDriver driver;
-    //public ElementMethods elementMethods;
-    //public PageMethods pageMethods;
-    //public WindowMethods windowMethods;
-
     //Constructor
     public WindowsPage(WebDriver driver) {
         super(driver);
-        //this.driver = driver;
-        //elementMethods = new ElementMethods(driver);
-        //pageMethods = new PageMethods(driver);
-        //windowMethods = new WindowMethods(driver);
-        //PageFactory.initElements(driver, this);
     }
 
     @FindBy(id= "tabButton")
