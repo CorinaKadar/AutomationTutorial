@@ -26,5 +26,4 @@ public class FrameTest extends SharedData {
         NestedFramePage nestedFramePage = new NestedFramePage(getDriver());
         nestedFramePage.interactWithNestedFrame();
     }
-
 }

@@ -26,5 +26,4 @@ public class WebTableTest extends SharedData {
         webTablesPage.editEntry(testData);
         webTablesPage.deleteEntry();
     }
-
 }

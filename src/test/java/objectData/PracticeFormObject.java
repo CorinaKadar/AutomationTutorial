@@ -19,7 +19,6 @@ public class PracticeFormObject extends GeneralObject {
 
     public PracticeFormObject(String filePath) {
         fromJsonToObject(filePath);
-
     }
 
     public String getFirstNameValue() {

@@ -26,7 +26,6 @@ public class AlertsWindowsPage extends BasePage {
         LoggerUtility.info("The user scrolls down the page");
         elementMethods.clickElement(browserSubmenu);
         LoggerUtility.info("The user clicks on Form submenu");
-
     }
 
     public void navigateToFramePage(){

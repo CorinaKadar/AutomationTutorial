@@ -47,5 +47,4 @@ public class AlertMethods {
         alertPromtButton.sendKeys(value);
         alertPromtButton.accept();
     }
-
 }

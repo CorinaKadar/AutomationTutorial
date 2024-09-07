@@ -51,7 +51,6 @@ public class WebTablesPage extends BasePage{
     @FindBy(id = "delete-record-4")
     private WebElement deleteElement;
 
-
     public void addEntry(WebTableObject testData){
         elementMethods.clickElement(addElement);
         LoggerUtility.info("The user clicked to add a new entry");

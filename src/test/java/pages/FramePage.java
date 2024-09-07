@@ -46,9 +46,3 @@ public class FramePage extends BasePage{
         LoggerUtility.info("The user interacts with a nested frame");
     }
 }
-
-
-
-
-
-
