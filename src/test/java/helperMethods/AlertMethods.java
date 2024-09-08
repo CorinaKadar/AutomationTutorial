@@ -1,5 +1,7 @@
 package helperMethods;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -7,17 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+@AllArgsConstructor
 public class AlertMethods {
-
     public WebDriver driver;
 
-    //Constructor
-    public AlertMethods(WebDriver driver) {
-        this.driver = driver;
-    }
-
     //Definim metode generale pt interactiunea cu alerte
-
     //wait
     public void waitForAlert(){
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));

@@ -1,16 +1,12 @@
 package helperMethods;
 
+import lombok.AllArgsConstructor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+@AllArgsConstructor
 public class FrameMethods {
-
     public WebDriver driver;
-
-    //Constructor
-    public FrameMethods(WebDriver driver) {
-        this.driver = driver;
-    }
 
     //Metode generale pt interactiunea cu iFrame-uri
 
@@ -25,5 +21,4 @@ public class FrameMethods {
     public void defaultContentMethod(){
         driver.switchTo().defaultContent();
     }
-
 }
