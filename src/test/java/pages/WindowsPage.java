@@ -37,7 +37,8 @@ public class WindowsPage extends BasePage {
     public void interactWithNewWindow(){
         pageMethods.scrollPage(0, 350);
         LoggerUtility.info("The user scrolled down the page");
-        elementMethods.clickElement(newWindowButton);
+        elementMethods.waitForElementToBeClickable(newWindowButton);
+        elementMethods.clickJSElement(newWindowButton);
         System.out.println(driver.getCurrentUrl());
         LoggerUtility.info("The user performed a click");
         windowMethods.switchSpecificTab(1);
