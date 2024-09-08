@@ -144,7 +144,7 @@ public class PracticeFormPage extends BasePage {
         elementMethods.fillElement(addressElement, testData.getAddressValue());
         LoggerUtility.info("The user submitted for currentaddress element the value: " + testData.getAddressValue());
 
-        elementMethods.clickElement(stateElement);
+        elementMethods.clickJSElement(stateElement);
         LoggerUtility.info("The user clicked to select the State");
 
         elementMethods.fillElement(stateInputElement, testData.getStateInputValue());
