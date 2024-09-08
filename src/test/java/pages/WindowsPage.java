@@ -21,6 +21,7 @@ public class WindowsPage extends BasePage {
     public void interactWithNewTab(){
         pageMethods.scrollPage(0, 350);
         LoggerUtility.info("The user scrolled down the page");
+        elementMethods.waitForElementVisible(newTabButton);
         elementMethods.clickElement(newTabButton);
         System.out.println(driver.getCurrentUrl());
         LoggerUtility.info("The user clicked on new tab button");
